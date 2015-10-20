@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Potato</title>
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<audio src="http://freesound.org/data/previews/91/91926_7037-lq.mp3" id="ding"></audio>
+<h1 class="center rainbow">Potato <img id="potato" class="center" src="http://img10.deviantart.net/af75/i/2014/242/1/9/kawaii_potato_by_hashtagpony-d7xbs1t.png" height="50px" width="50px" style="margin-right: 10px;"></img>Timer</h1>
+
+<div class="center">
+  <span class="half">Break Time</span>
+  
+
+  <span class="half">
+  <button type="button" class="biggerText" id="breakMinus">-</button>
+    <span class="biggerText" id="breakCount">5</span>
+  <button type="button" class="biggerText" id="breakPlus">+</button>
+  </span>
+  <span class="half">Session Time</span>
+  <span class="half">
+  <button type="button" class="biggerText"
+          name="session"
+          id="minus">-</button>
+  <span id="count" class="biggerText">25</span>
+  <button type="button" class="biggerText"
+          name="session"
+          id="plus">+</button>
+  </span>
+  <button id="start">Start Potato Timer</button>
+  <button id="reset">Reset Potato Timer</button>
+</div>
+<div class="container" >
+  <div class="center border" id="border">
+<div class="session">
+  <h2 id="statusText">Session</h2>
+  <div id="timeLeft" class="biggerText"></div>
+</div>
+</div>
+
+<div class="center border" id="border">
+  <h2>Completed Potatoes</h2>
+  <div id="completedPotatoes" class="biggerText">
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
